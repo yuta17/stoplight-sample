@@ -29,7 +29,11 @@ paths:
           application/json:
             schema:
               type: object
-              properties: {}
+              properties:
+                id:
+                  type: integer
+                name:
+                  type: string
       description: ''
     post:
       summary: ''

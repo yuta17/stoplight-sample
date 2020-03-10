@@ -4,5 +4,5 @@ description: ''
 properties:
   id:
     type: integer
-  '':
+  name:
     type: string
