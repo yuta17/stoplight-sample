@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: sample
-  version: 1.sample0
+  version: 1
   contact: {}
   description: sample
 servers:
@@ -9,8 +9,9 @@ servers:
 paths:
   /users:
     get:
-      summary: users
-      tags: []
+      summary: GET /users
+      tags:
+        - users
       responses:
         '200':
           description: OK
@@ -30,13 +31,13 @@ paths:
             schema:
               type: object
               properties:
-                id:
-                  type: integer
                 name:
                   type: string
-      description: ''
+                id:
+                  type: integer
+      description: GET /users
     post:
-      summary: ''
+      summary: POST /users
       operationId: post-users
       responses:
         '200':
@@ -48,7 +49,7 @@ paths:
                 properties:
                   id:
                     type: integer
-                  '':
+                  name:
                     type: string
           headers: {}
       requestBody:
