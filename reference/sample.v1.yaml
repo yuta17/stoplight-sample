@@ -69,7 +69,8 @@ paths:
   /shops:
     get:
       summary: GET /shops
-      tags: []
+      tags:
+        - shop
       responses:
         '200':
           description: OK
@@ -111,6 +112,8 @@ paths:
                   type: integer
                 ' name':
                   type: string
+      tags:
+        - shop
 components:
   schemas: {}
   securitySchemes: {}
