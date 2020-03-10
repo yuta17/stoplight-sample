@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: sample
-  version: '1.0'
+  version: 1.sample0
   contact: {}
   description: sample
 servers:
@@ -30,6 +30,130 @@ paths:
             schema:
               type: object
               properties: {}
+          application/xml:
+            schema:
+              type: object
+              properties: {}
+          multipart/form-data:
+            schema:
+              type: object
+              properties: {}
+          text/html:
+            schema:
+              type: object
+              properties: {}
+          text/plain:
+            schema:
+              type: object
+              properties: {}
+          application/EDI-X12:
+            schema:
+              type: object
+              properties: {}
+          application/EDIFACT:
+            schema:
+              type: object
+              properties: {}
+          application/atom+xml:
+            schema:
+              type: object
+              properties: {}
+          application/font-woff:
+            schema:
+              type: object
+              properties: {}
+          application/gzip:
+            schema:
+              type: object
+              properties: {}
+          application/javascript:
+            schema:
+              type: object
+              properties: {}
+          application/octet-stream:
+            schema:
+              type: object
+              properties: {}
+          application/ogg:
+            schema:
+              type: object
+              properties: {}
+          application/pdf:
+            schema:
+              type: object
+              properties: {}
+          application/postscript:
+            schema:
+              type: object
+              properties: {}
+          application/soap+xml:
+            schema:
+              type: object
+              properties: {}
+          application/x-bittorrent:
+            schema:
+              type: object
+              properties: {}
+          application/x-tex:
+            schema:
+              type: object
+              properties: {}
+          application/xhtml+xml:
+            schema:
+              type: object
+              properties: {}
+          application/xml-dtd:
+            schema:
+              type: object
+              properties: {}
+          application/xop+xml:
+            schema:
+              type: object
+              properties: {}
+          application/zip:
+            schema:
+              type: object
+              properties: {}
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties: {}
+          new:
+            schema:
+              type: object
+              properties: {}
+      description: ''
+    post:
+      summary: ''
+      operationId: post-users
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  '':
+                    type: string
+          headers: {}
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                '':
+                  type: string
+        description: ''
+      description: POST /users
+      tags:
+        - users
+        - ''
   /shops:
     get:
       summary: shops
