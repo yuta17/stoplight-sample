@@ -31,10 +31,10 @@ paths:
             schema:
               type: object
               properties:
-                name:
-                  type: string
                 id:
                   type: integer
+                name:
+                  type: string
       description: GET /users
     post:
       summary: POST /users
@@ -68,7 +68,7 @@ paths:
         - users
   /shops:
     get:
-      summary: shops
+      summary: GET /shops
       tags: []
       responses:
         '200':
@@ -83,6 +83,34 @@ paths:
                   name:
                     type: string
       operationId: get-shops
+      description: GET /shops
+    post:
+      summary: POST /shops
+      operationId: post-shops
+      responses:
+        '200':
+          description: OK
+          headers: {}
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+      description: POST /shops
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                ' name':
+                  type: string
 components:
   schemas: {}
   securitySchemes: {}
