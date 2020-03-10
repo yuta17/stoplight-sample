@@ -83,6 +83,12 @@ paths:
                     type: integer
                   name:
                     type: string
+                  owner:
+                    oneOf:
+                      - properties:
+                          name:
+                            type: string
+                    type: object
       operationId: get-shops
       description: GET /shops
     post:
@@ -110,7 +116,7 @@ paths:
               properties:
                 id:
                   type: integer
-                ' name':
+                name:
                   type: string
       tags:
         - shop
