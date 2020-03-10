@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: sample
-  version: '1.0'
+  version: 1.sample0
   contact: {}
   description: sample
 servers:
@@ -29,7 +29,42 @@ paths:
           application/json:
             schema:
               type: object
-              properties: {}
+              properties:
+                id:
+                  type: integer
+                name:
+                  type: string
+      description: ''
+    post:
+      summary: ''
+      operationId: post-users
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  '':
+                    type: string
+          headers: {}
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                name:
+                  type: string
+        description: ''
+      description: POST /users
+      tags:
+        - users
   /shops:
     get:
       summary: shops
