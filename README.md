@@ -3,6 +3,10 @@
 Stoplight のエディタ画面です。
 ![stoplight editor](https://user-images.githubusercontent.com/8072432/75873820-f55c8800-5e53-11ea-90cd-849fda67d1f8.png)
 
+## 使い方
+
+![howto](https://user-images.githubusercontent.com/8072432/83502835-27d25b80-a4fd-11ea-9524-6ce8719bef27.png)
+
 ## 良い点
 
 - Publish で[ドキュメント](https://stoplight.io/p/docs/gh/yuta17/stoplight-sample)に反映
